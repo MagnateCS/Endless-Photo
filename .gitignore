@@ -8,3 +8,14 @@ dist
 .env
 .env.*
 !.env.example
+
+# Ignore all image formats
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.bmp
+*.tiff
+*.ico
