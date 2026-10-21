@@ -1,0 +1,39 @@
+upstream endless-photobooth_app {
+    server 127.0.0.1:5053;
+    keepalive 16;
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name endless-photobooth.magnatecs.com;
+
+    # Webroot for ACME challenges (Certbot)
+    root /var/www/endless-photobooth.magnatecs.com/public;
+
+    # Make sure this dir exists:
+    #   /var/www/endless-photobooth.magnatecs.com/.well-known/acme-challenge/
+    location /.well-known/acme-challenge/ {
+        root /var/www/endless-photobooth;
+    }
+
+    # Proxy everything else to your Deno app on port 5050
+    location / {
+        proxy_pass http://endless-photobooth_app;
+
+        proxy_http_version 1.1;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Real-IP         $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+# This map must live in http{} context; if you're using it elsewhere,
+# keep it in your main nginx.conf instead of here.
+# Commenting out for now since we don't strictly need it:
+#
+# map $http_upgrade $connection_upgrade {
+#     default upgrade;
+#     ''      close;
+# }

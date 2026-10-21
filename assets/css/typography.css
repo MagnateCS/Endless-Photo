@@ -1,0 +1,146 @@
+/* Shared typography contract. See TYPOGRAPHY.md before changing any values. */
+@layer base {
+  body { @apply font-body; font-size: 16px; font-weight: 400; line-height: 1.65; letter-spacing: 0em; }
+}
+
+@layer components {
+  .type-hero {
+    @apply font-serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+  .type-page {
+    @apply font-serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
+  .type-section {
+    @apply font-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+  }
+  .type-subsection {
+    @apply font-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+  .type-card {
+    @apply font-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+  }
+  .type-experience {
+    @apply font-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+  }
+  .type-intro {
+    @apply font-body;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
+  .type-body {
+    @apply font-body;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    letter-spacing: 0em;
+  }
+  .type-small {
+    @apply font-body;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
+  .type-nav {
+    @apply font-body;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+  }
+  .type-button {
+    @apply font-body;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+  }
+  .type-price {
+    @apply font-body;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  .type-price-description {
+    @apply font-body;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
+  .type-label {
+    @apply font-body;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0em;
+  }
+  .type-eyebrow {
+    @apply font-body;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.12em;
+  }
+  /* Phase 2 explicitly requests a bold announcement; other roles keep their approved weights. */
+  .type-announcement {
+    @apply font-body;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.12em;
+  }
+  .type-caption {
+    @apply font-body;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
+  .type-footer {
+    @apply font-body;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
+
+  @media (min-width: 768px) {
+    .type-hero { font-size: 72px; }
+    .type-page { font-size: 60px; }
+    .type-section { font-size: 48px; }
+    .type-subsection { font-size: 36px; }
+    .type-card { font-size: 28px; }
+    .type-experience { font-size: 32px; }
+    .type-intro { font-size: 22px; }
+    .type-nav { font-size: 14px; }
+    .type-price { font-size: 30px; }
+  }
+}
