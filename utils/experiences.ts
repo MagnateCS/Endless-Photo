@@ -2,7 +2,7 @@ export const experiences = [
   {
     slug: 'social-booth', category: 'ESSENTIAL', name: 'Social Booth',
     tagline: 'All the fun, none of the footprint.', price: '$500',
-    image: '/social-booth.avif', alt: 'Freestanding Social Booth at an event with colorful arched backdrops',
+    image: '/social-booth.PNG', alt: 'Freestanding Social Booth at an event with colorful arched backdrops',
     description: [],
     highlights: ['All-day rental', 'Photos, Boomerangs & GIFs', 'No attendant required'],
     items: [
@@ -13,7 +13,7 @@ export const experiences = [
   {
     slug: 'open-air', category: 'CLASSIC', name: 'Open Air',
     tagline: 'Timeless, effortless, elegant.', price: '$600',
-    image: '/open-air.jpg', alt: 'Open Air photo booth with an umbrella light, touchscreen, and photo printer at an event',
+    image: '/open-air.PNG', alt: 'Open Air photo booth with an umbrella light, touchscreen, and photo printer at an event',
     description: [],
     highlights: ['2×6 prints for everyone pictured', 'Backdrop and props included', 'Photo booth attendant'],
     items: [
@@ -25,7 +25,7 @@ export const experiences = [
   {
     slug: 'motion-experience-360', category: 'PREMIERE', name: 'Motion Experience 360',
     tagline: 'Your red-carpet moment, beautifully captured.', price: '$800',
-    image: '/360-booth.jpg', alt: 'Guests posing on a 360 video platform with a rotating camera arm at an outdoor event',
+    image: '/360-booth.PNG', alt: 'Guests posing on a 360 video platform with a rotating camera arm at an outdoor event',
     highlights: ['Unlimited 360° videos', 'Cinematic slow-motion effects', 'Creative Director and Event Host'],
     description: [
       'Step into an immersive cinematic experience where every guest becomes the star. Our Motion Experience captures sweeping 360° videos with dramatic slow motion, dynamic movement, and professionally crafted effects—creating content that feels polished, modern, and worthy of sharing.',
@@ -40,7 +40,7 @@ export const experiences = [
   {
     slug: 'cali-booth', category: 'SIGNATURE', name: 'Cali Booth',
     tagline: 'Our most-loved experience, elevated.', price: '$850',
-    image: '/cali-booth.jpg', alt: 'Wooden Cali Booth with a large circular studio light and matching photo printer',
+    image: '/cali-booth.PNG', alt: 'Wooden Cali Booth with a large circular studio light and matching photo printer',
     description: [],
     highlights: ['Premium backdrop', 'Glam filter finish', 'Prints for every guest'],
     items: [
@@ -64,7 +64,7 @@ export const experiences = [
   {
     slug: 'editorial-experience', category: 'EDITORIAL EXPERIENCE', name: 'Editorial Experience',
     title: 'Magazine Box', price: '$1,800', tagline: "Your moment. Your cover story.",
-    image: '/magazine-box.jpg', alt: 'Custom magazine-style photo installation at Tuscan Rose Ranch, surrounded by greenery',
+    image: '/magazine-box.PNG', alt: 'Custom magazine-style photo installation at Tuscan Rose Ranch, surrounded by greenery',
     highlights: ['Custom magazine-style installation', 'Personalized event or brand artwork', 'Capture with your own smartphone'],
     description: [
       'Designed for weddings, luxury events, and brand activations, the Editorial Experience transforms every guest into the star of their own magazine-worthy moment.',
@@ -77,7 +77,7 @@ export const experiences = [
 ]
 
 export const audioGuestbook = {
-  slug: 'audio-guestbook', name: 'Audio Guestbook', image: '/audio-book.jpg',
+  slug: 'audio-guestbook', name: 'Audio Guestbook', image: '/audio-book.PNG',
   alt: 'Vintage-style telephone for recording audio guestbook messages',
   description: 'A vintage-style phone for guest voice messages, delivered after your event.'
 }
